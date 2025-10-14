@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { LibrariesModule } from './libraries/libraries.module';
 
-@Module({})
+@Module({
+  imports: [LibrariesModule],
+})
 export class AppModule {}
