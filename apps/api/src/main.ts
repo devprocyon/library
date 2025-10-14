@@ -10,6 +10,7 @@ async function bootstrap() {
     .setDescription('API for managing libraries')
     .setVersion('1.0')
     .addTag('libraries')
+    .addTag('books')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);

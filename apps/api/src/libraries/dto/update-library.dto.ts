@@ -6,12 +6,12 @@ export class UpdateLibraryDto {
     example: 'Kyiv Regional Library',
     required: false,
   })
-  name: string;
+  name?: string;
 
   @ApiProperty({
     description: 'New physical address of the library',
     example: 'Shevchenko Blvd, 25, Kyiv',
     required: false,
   })
-  address: string;
+  address?: string;
 }
