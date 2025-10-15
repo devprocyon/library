@@ -1,26 +1,26 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-export class UpdateBookDto {
+export class UpdateReaderDto {
   @ApiProperty({
-    description: 'New title of the book',
-    example: 'Harry Potter and the Prisoner of Azkaban',
+    description: 'New first name of the reader',
+    example: 'Bob',
     required: false,
   })
-  title?: string;
+  firstName?: string;
 
   @ApiProperty({
-    description: 'New author of the book',
-    example: 'J. K. Rowling',
+    description: 'New last name of the reader',
+    example: 'User',
     required: false,
   })
-  author?: string;
+  lastName?: string;
 
   @ApiProperty({
-    description: 'New year the book was published',
-    example: 1999,
+    description: 'New email address of the reader',
+    example: 'bob.user@example.com',
     required: false,
   })
-  year?: number;
+  email?: string;
 
   @ApiProperty({
     description: 'New unique identifier of the library (UUID v4)',
